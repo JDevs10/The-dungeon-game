@@ -9,6 +9,5 @@ public class Main {
 		System.out.println("Player character name: "+up.getCharacterName()+" with total treasure: "+up.getPlayerTotalTreasure()+"\n"
 				+ "Enemy character name: "+ec.getCharacterName());
 		
-		
 	}
 }
