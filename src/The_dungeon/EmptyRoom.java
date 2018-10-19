@@ -1,12 +1,24 @@
 package The_dungeon;
 
-public class EmptyRoom extends Room {
-	private int length;
-	private int width;
+import java.util.Random;
 
-	public EmptyRoom(int l, int L) {
-		this.length = l;
-		this.width = L;
+public class EmptyRoom extends Rooms {
+	private int roomType = 0;
+	private UserPlayer up = new UserPlayer();
+	
+	public EmptyRoom() {
+		super("Empty Room");
+	}
+	
+	public int getRoomType() {
+		return this.roomType;
+	}
+	
+	public int getRandomHealth() {
+		Random rand = new Random();
+		int health;
+		health = rand.nextInt((13-1)+1);
+		return health;
 	}
 
 }

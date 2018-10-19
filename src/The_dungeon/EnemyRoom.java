@@ -1,12 +1,15 @@
 package The_dungeon;
 
-public class EnemyRoom extends Room{
-	private int length;
-	private int width;
 
-	public EnemyRoom(int l, int L) {
-		this.length = l;
-		this.width = L;
+public class EnemyRoom extends Rooms{
+	private int roomType = 2;
+
+	public EnemyRoom() {
+		super("Enemy Room");
+	}
+	
+	public int getRoomType() {
+		return this.roomType;
 	}
 
 }

@@ -1,13 +1,15 @@
 package The_dungeon;
 
-public abstract class Characters {
+public class Characters {
 	private String name;
+	
 	
 	public Characters(String name) {
 		this.name = name;
 	}
 	
 	public String getCharacterName() {
-		return name;
+		return this.name;
 	}
+	
 }

@@ -1,11 +1,23 @@
 package The_dungeon;
 
-public class TreasureRoom extends Room{
-	private int length;
-	private int width;
+import java.util.Random;
 
-	public TreasureRoom(int l, int L) {
-		this.length = l;
-		this.width = L;
+public class TreasureRoom extends Rooms{
+	private int roomType = 1;
+	private int gold;
+	
+	public TreasureRoom() {
+		super("Treasure Room");
+		gold = 0;
+	}
+	
+	public int getRoomType() {
+		return this.roomType;
+	}
+	
+	public int getRandomGold() {
+		Random rand = new Random();
+		gold += rand.nextInt((25-1)+1);
+		return gold;
 	}
 }
